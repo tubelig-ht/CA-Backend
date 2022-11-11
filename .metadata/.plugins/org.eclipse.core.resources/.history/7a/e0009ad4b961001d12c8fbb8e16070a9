@@ -32,7 +32,6 @@ public class TouristController {
 	@GetMapping("/")
 	public ResponseEntity<List<Tourist>> getAllTourists(){
 		List<Tourist>touristList= touristService.getAllTourists();
-		System.out.println("get fucntion worked");
 		return new ResponseEntity<>(touristList,HttpStatus.OK);
 	}
 	
